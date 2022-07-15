@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+* {
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+  box-sizing:border-box;
+}
+
+html, body{
+  width:100%;
+  height:100%;
+}
+
+
+body {
+  font-family: 'Josefin Slab', serif;
+  padding:40px;
+  background: #111;
+  overflow: hidden;
+}
+
+
+.wrapper {
+  transform-style: preserve-3d;
+  margin: 0 auto;
+  width:250px;
+  height:400px;
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+  margin: auto;
+}
+
+
+.wrapper:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  display: block;
+  content: '';
+  height: 22px;
+  width: 100%;
+  background-size: 100%;
+}
+
+
+.bloc {
+  height: 100%;
+  width: 100%;
+  background: url(./sccm.jpg) no-repeat center top;
+  position: relative;
+}
+
+.content {
+  transform: translateZ(80px) scale(1);
+  -webkit-transform: translateZ(80px) scale(1);
+  height: 360px;
+  width: 210px;
+  position: absolute;
+  margin:auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding:20px;
+  color: #fff;
+  z-index: 3;
+}
+
+.content2 {
+  transform: translateZ(40px) scale(1);
+  -webkit-transform: translateZ(40px) scale(1);
+ # background: #7723ff;
+  opacity: 0.4;
+  left: -80px;
+  padding: 0;
+  z-index: 2;
+}
+
+.content p:nth-of-type(1) {
+  font-size:36px;
+  line-height:60px;
+  position: absolute;
+  bottom:70px;
+}
+.content p:nth-of-type(2) {
+  position: absolute;
+  bottom:40px;
+}
+.content p:nth-of-type(3) {
+  position: fixed;
+  bottom:10px;
+  right: 70px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.50rem 1rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #fff;
+  border: none;
+}
+.btn:hover {
+  background-color: silver;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    height: 1em;
+    position: ab;
+}
+header .logo{
+    display: flex;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li{
+    margin: 10px;
+    font-size: 27px;
+    align-items: center;
+    vertical-align: middle;
+}
+header ul li a{
+    padding: 6px 15px;
+    font-family: 'Hacked', serif;
+    border-radius: 19px;
+color: white;
+}
+header ul li a:hover, .hed{
+    background: #fff;
+    color: black;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+.footer p{
+    text-transform: capitalize;
+    word-spacing: 2px;
+    
+}
