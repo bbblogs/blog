@@ -56,10 +56,10 @@ header ul li{
     vertical-align: middle;
 }
 header ul li a{
+    font-family: 'HACKED'; src: url('http://www.fontsaddict.com/fontface/hacked.ttf');
     padding: 6px 15px;
-    font-family: 'Hacked', serif;
     border-radius: 19px;
-color: white;
+    color: white;
 }
 header ul li a:hover, .hed{
     background: #fff;
